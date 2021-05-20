@@ -1,0 +1,141 @@
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+
+/* REMOVE ME - dashed lines and height for debugging */
+/* 
+#mainColumn {
+  outline: 1px dashed orange;
+  height: 200px;
+} */
+
+/* Your css code here! */
+body{
+  text-align: center;
+  background-color: #fcf1f1;
+}
+input[title]{
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+#firstColumn{
+  font-family: 'Pacifico', cursive;
+  margin-top: 20px;
+  color: red;
+  line-height: 2rem;
+  font-size: 3rem;
+}
+#lastColumn{
+  font-family: 'Pacifico', cursive;
+  margin-top: 20px;
+  color: red;
+  
+}
+#moveip:hover, #moveip:focus {
+  box-shadow: 0 0 5px rgb(135, 241, 179);
+  border-color: #cc0e74;
+}
+
+#tableBoard{
+  position: relative;
+  margin: 20px auto;
+  height: 320px;
+  width: 320px;
+  table-layout: fixed;
+}
+#moveip{
+  border-radius: 5px;
+  border-color: #cc0e74;
+  border-top-color: #cc0e74;
+  
+}
+.mainContainer{
+  margin-top: 50px;
+}
+.candy-red, .candy-green, .candy-orange, .candy-blue, .candy-purple, .candy-yellow {
+  display: table;
+  height: 100%;
+  width: 100%;
+  color: white;
+  vertical-align: middle;
+
+}
+.buttonGrid{
+  margin-top: 50px;
+}
+.candy-red {
+  background-color: red;
+}
+
+.candy-green {
+  background-color: green;
+}
+
+.candy-orange {
+  background-color: orange;
+}
+
+.candy-blue {
+  background-color: blue;
+}
+
+.candy-purple {
+  background-color: purple;
+}
+
+.candy-yellow {
+  background-color: yellow;
+  color: gray;
+}
+/* CSS for buttons */
+.btn:hover {
+  background-color: #8ff0d3;
+}
+
+.btn:disabled {
+  background-color: #dddddd;
+}
+.btn{
+  font-family: 'Pacifico', cursive;
+  border-radius: 20%;
+  background-color: #a7e9af;
+}
+#newGame{
+  
+  margin: 20px auto 10px;
+  width: 150px;
+  background-color: #69e9d3;
+  border-color:Blue;
+  color:#0f3057;
+}
+.title{
+  position: relative;
+}
+.title:hover::after{
+  position: absolute;
+  content: attr(data-tooltip);
+  bottom: -2.5em;
+  right: -1em;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  padding: .25em .5em;
+}
+#crushOnce{
+  margin-top: 50px;
+  background-color: #69e9d3;
+  border-color:Blue;
+  color:#0f3057;
+}
+#crushOnce:disabled{
+  background-color: #dddddd;
+}
+
+/* CSS for arrows */
+.leftCol{
+  padding-right: 0;
+}
+.rightCol{
+  padding-left: 0;
+}
